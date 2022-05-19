@@ -34,7 +34,7 @@
         }
 
         ?>
-        <a href="index.php" class="btn btn-primary">Retornar</a>
+        <a href="pesquisa.php" class="btn btn-primary">Retornar</a>
       </div>
     </div>
     </div>

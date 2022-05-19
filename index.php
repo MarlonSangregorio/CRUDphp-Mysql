@@ -11,29 +11,51 @@
 
     <title>Empresa</title>
 
+    <style>
+      body {
+        margin-top: 15%;
+        background-image: url("https://i.pinimg.com/originals/12/b2/3a/12b23a7752e8a7a4464c1ff5e596237f.gif");
+      }
+
+
+      .display-4{
+        color: rgb(104, 0, 241);
+        margin-bottom: 1rem;
+        font-family: monospace;
+        text-align: center;      
+      }
+
+      .jumbotron {
+        background: rgb(30,30,30);
+        padding: 2rem;
+        border-radius: 1rem;
+      }
+      </style>
+      
+
   </head>
   <body>
     <div class="container">
       <div class="row"> 
-      <div class="col-3"></div>
-        <div class="col-6">
+      <div class="col-2"></div>
+        <div class="col-8">
          <div class="jumbotron">
-          <h1 class="display-4"><strong>Login de úsuario</strong></h1>
+          <h1 class="display-4">Login Úsuario</h1>
 
 
 
           <!--FORMULARIO DE LOGIN -->
           <form action="index.php" method="POST">
-  <!-- Email input -->
+  <!-- user input -->
   <div class="form-outline mb-4">
-    <input type="text" id="form1Example1" class="form-control" name="login"/>
-    <label class="form-label" for="form1Example1"><strong>Úsuario</strong></label>
+    <input type="text" id="form1Example1" placeholder="Nome de Úsuario" class="form-control" name="login"/>
+    <label class="form-label" for="form1Example1"></label>
   </div>
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <input type="password" id="form1Example2" class="form-control" name="senha"/>
-    <label class="form-label" for="form1Example2"><strong>Senha</strong></label>
+    <input type="password" id="form1Example2" placeholder="Senha" class="form-control" name="senha"/>
+    <label class="form-label" for="form1Example2"></label>
   </div>
 
   <!-- 2 column grid layout for inline styling -->
@@ -52,6 +74,13 @@
           <!--Respostas Do Site -->
 
           <?php
+
+          function mensagem($texto, $tipo) {
+            echo "<div class='alert alert-$tipo' role='alert'>
+            $texto
+          </div>";
+          }
+
           if (isset($_POST['login'])) {//Se o POST forem setados, é porque ele mandou via POST
             $login = $_POST['login'];
             $senha = $_POST['senha'];
@@ -61,9 +90,11 @@
             if($login === "Marlon" and $senha === "0321"){
               session_start();
               $_SESSION['login'] = "Marlon";//$SESSION variavel global
-              header("location: Restrito");
+              header("location: Restrito");//encaminhando o usuario para a index do restrito
             } else {
-              echo "Úsuario ou senha Inválido!";
+
+              echo "<br>";
+              mensagem("<center>Úsuario ou senha inválido!</center>",'danger');
             }
           }
           ?>
@@ -74,7 +105,7 @@
 
         </div>
       </div>
-      <div class="col-3"></div>
+      <div class="col-2"></div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -10,6 +10,10 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Cadastro</title>
 
   </head>
@@ -17,13 +21,16 @@
     <div class="container">
       <div class="row"> 
         <div class="col">
-        <h1>Cadastro de usuário</h1>
+        <h1 class ="display-4">Cadastro de usuário</h1>
+        
          <!--Inicio do Formulario-->
          <!-- o action indica para onde os dados do form sera encaminhado! -->
+        <div class="col-8">
          <form action="cadastro_script.php" method="POST">
 
            <!--Nome do úsuario-->
          <div class="mb-3">
+           
 
           <label for="nome" class="form-label">Nome completo</label>
           <input type="text" class="form-control" name="nome" required>
@@ -62,8 +69,8 @@
            <div class="mb-3">
 
           <input type="submit" class="btn btn-success" name="botao">
+            </div>
            </div>
-
          </form>
          <a href="index.php" class="btn btn-info">Voltar para o início</a>
         </div>

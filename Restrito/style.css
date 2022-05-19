@@ -1,0 +1,37 @@
+body {
+  margin-top: 10%;
+  background-image: url("https://i.gifer.com/33HO.gif");
+}
+
+h1 {
+  color: rgb(104, 0, 241);
+  font-family: monospace;
+}
+
+tr {
+  color: white;
+  font-family: monospace;
+  font-size: large;
+}
+
+
+.jumbotron {
+  padding: 5rem;
+  background-color: rgb(30, 30, 30);
+  color: rgb(104, 0, 241);
+}
+
+.lead {
+  color: white;
+}
+
+/*CADASTRO.PHP*/
+
+.form-label {
+  color:white;
+  font-family: monospace;
+}
+
+
+
+

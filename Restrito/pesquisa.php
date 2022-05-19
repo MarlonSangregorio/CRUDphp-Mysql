@@ -36,13 +36,14 @@
         <h1>Pesquisar</h1>
 
         <!--BARRA DE NAVEGAÇÃO E BOTAO BUSCAR/PESQUISAR-->
-
-        <nav class="navbar navbar-light bg-light">
+        
+        <nav class="navbar">
           <form class="form-inline" action="pesquisa.php" method="POST">
           <input class="form-control mr-sm-2" type="search" placeholder="Nome" aria-label="Search" name="busca" autofocus>
           <br>
-          <button class="btn btn-outline-success my-2 my-sm-0" 
+          <button class="btn btn-outline-success my-2 my-sm-2" 
           type="submit">Pesquisar</button>
+          
        </form>
        </nav>
 

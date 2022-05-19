@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Alteração de Cadastro</title>
+    <title>Alteração</title>
 
   </head>
   <body>
@@ -29,7 +29,7 @@
     <div class="container">
       <div class="row"> 
         <div class="col">
-        <h1>Cadastro de usuário</h1>
+        <h1>Alteração de cadastro</h1>
          <!--Inicio do Formulario-->
          <!-- o action indica para onde os dados do form sera encaminhado! -->
          <form action="edit_script.php" method="POST">
