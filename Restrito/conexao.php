@@ -3,7 +3,7 @@
 <?php
    $server = "localhost";//local do meu server
    $user = "root";//root, esse usuario pode ser mudado
-   $pass = "Marlon0321";//senha
+   $pass = "";//senha
    $bd = "empresa";//banco de dados
 
       //quando o login tem susesso a funçao abaixo indica se ela testa
